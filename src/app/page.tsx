@@ -17,6 +17,7 @@ const AlertDialogDemo = () => {
       <div className='flex flex-col'>qqweqwe</div>
       <AlertDialog>
         <AlertDialogContent>
+          <span>qwe</span>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
