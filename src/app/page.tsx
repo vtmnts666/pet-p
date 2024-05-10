@@ -18,6 +18,7 @@ const AlertDialogDemo = () => {
       <AlertDialog>
         <AlertDialogContent>
           <span>qwe</span>
+          <span>qwe</span>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
