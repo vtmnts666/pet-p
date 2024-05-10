@@ -5,7 +5,6 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle
@@ -19,6 +18,7 @@ const AlertDialogDemo = () => {
         <AlertDialogContent>
           <span>qwe</span>
           <span>qwe</span>
+          <span>123</span>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           </AlertDialogHeader>
