@@ -3,10 +3,12 @@
 import React from 'react';
 import { YandexMetricaProvider } from 'next-yandex-metrica';
 
+import { env } from '@/env.mjs';
+
 export const YandexMetrika = () => {
   return (
     <YandexMetricaProvider
-      tagID={Number(process.env.NEXT_PUBLIC_YM_COUNTER)}
+      tagID={Number(env.NEXT_PUBLIC_YM_COUNTER)}
       initParameters={{
         clickmap: true,
         trackLinks: true,

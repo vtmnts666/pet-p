@@ -9,11 +9,13 @@ import {
   AlertDialogHeader,
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
+import { env } from '@/env.mjs';
 
 const AlertDialogDemo = () => {
   return (
     <>
-      <div className='flex flex-col'>qqweqwe</div>
+      <div className='flex flex-col'>{env.NEXT_PUBLIC_API_URL}</div>
+      <div className=''>{process.env.NODE_ENV}</div>
       <AlertDialog>
         <AlertDialogContent>
           <span>qwe</span>
