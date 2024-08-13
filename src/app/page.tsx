@@ -1,37 +1,26 @@
 'use client';
 
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle
-} from '@/components/ui/alert-dialog';
-import { env } from '@/env.mjs';
+import React from 'react';
 
-const AlertDialogDemo = () => {
+import { Badge } from '@/components/ui/badge';
+import TokenList from '@/components/ui/tokenList';
+import TokenPrice from '@/components/ui/tokenPrice';
+
+const Page = () => {
   return (
-    <>
-      <div className='flex flex-col'>{env.NEXT_PUBLIC_API_URL}</div>
-      <div className=''>{process.env.NODE_ENV}</div>
-      <AlertDialog>
-        <AlertDialogContent>
-          <span>qwe</span>
-          <span>qwe</span>
-          <span>123</span>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Continue</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-    </>
+    <div className='flex flex-col'>
+      <TokenList />
+      <Badge>
+        Ethereum: <TokenPrice id='ethereum' />
+      </Badge>
+      <Badge>
+        Bitcoin: <TokenPrice id='bitcoin' />
+      </Badge>
+      <Badge>
+        Arbitrum: <TokenPrice id='arbitrum' />
+      </Badge>
+    </div>
   );
 };
 
-export default AlertDialogDemo;
+export default Page;
